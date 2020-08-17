@@ -19,9 +19,9 @@
   }
 
   svg {
-    width: 28px;
-    height: 28px;
-    fill: '#999';
+    width: 24px;
+    height: 24px;
+    fill: var(--grey-color, #666);
     transition: all 0.3s;
     margin-block-start: 1em;
     margin-block-end: 1em;

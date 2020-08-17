@@ -20,7 +20,7 @@ const SocialMediaBlock: FunctionComponent<SocialMenuBlockInterface> = ({}) => {
 
   return (
     <section>
-      <div className={classNames('container', 'pad0')}>
+      <div className={classNames('bp-container')}>
         <div style={{ float: 'right' }}>
           <p style={{ float: 'left', marginRight: '15px' }}>
             Connect with Rexona on:
