@@ -21,11 +21,11 @@
   svg {
     width: 32px;
     height: 32px;
-    fill: black;
-    transition: all .3s;
+    fill: '#999';
+    transition: all 0.3s;
   }
 
   a:hover svg {
-    fill: var(--primary-color, #ff5c85);
+    fill: var(--primary-color, #4287f5);
   }
 }
