@@ -28,7 +28,7 @@ export default makeStyles(({ breakpoints, palette, spacing }: Theme) =>
       '& svg': {
         width: 32,
         height: 32,
-        fill: palette.common.white,
+        fill: palette.grey[200],
         transition: 'all .3s',
       },
     },

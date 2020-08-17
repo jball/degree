@@ -76,7 +76,7 @@
     "@svgr/webpack": "^5.1.0",
     "@types/classnames": "^2.2.8",
     "@types/enzyme": "^3.10.4",
-    "@types/jest": "^25.1.1",
+    "@types/jest": "^26.0.10",
     "@types/lodash-es": "^4.17.3",
     "@types/react-helmet": "^5.0.15",
     "@types/react-test-renderer": "^16.9.2",
@@ -100,13 +100,13 @@
     "gatsby-plugin-root-import": "^2.0.5",
     "husky": "^4.2.1",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^25.1.0",
+    "jest": "^26.4.0",
     "jest-svg-transformer": "^1.0.0",
     "lint-staged": "^10.0.7",
     "prettier": "^1.17.1",
-    "ts-jest": "^25.1.0",
+    "ts-jest": "^26.2.0",
     "typed-react-markdown": "^0.1.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.9.7"
   },
   "keywords": [
     "gatsby"
