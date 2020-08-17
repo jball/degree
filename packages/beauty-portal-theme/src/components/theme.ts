@@ -5,11 +5,11 @@ import createBreakpoints from '@material-ui/core/styles/createBreakpoints';
 const breakpoints = createBreakpoints({});
 
 const color = {
-  primary: '#FF5C85',
-  secondary: '#b8f0c0',
+  primary: '#4287f5',
+  secondary: '#f8e6de',
   tertiary: '#fed760',
-  quaternary: '#f8e6de',
-  quinary: '#2c5270',
+  quaternary: '#b8f0c0',
+  quinary: '#FF5C85',
   grey: {
     light: '#333',
     lighter: 'rgba(0,0,0,.4)',
@@ -24,11 +24,11 @@ const typography = {
   fontFamily: 'Proxima Nova Alt',
   body2: {
     fontFamily: 'Proxima Nova Alt',
-    font-size: 16,
-    font-weight: 400,
-    line-height: 1.6,
+    fontSize: 16,
+    fontWeight: 400,
+    lineHeight: 1.6,
     color: color.grey.light,
-    letter-spacing: 0,
+    letterSpacing: 0,
   },
 };
 
@@ -68,23 +68,23 @@ const overrides = {
     },
     h1: {
       fontFamily: 'Proxima Nova Alt',
-      font-weight: 600,
-      font-size: '1.875rem',
-      line-height: 1.1,
-      letter-spacing: 0,
+      fontWeight: 600,
+      fontSize: '1.875rem',
+      lineHeight: 1.1,
+      letterSpacing: 0,
       color: color.black,
       [breakpoints.up('md')]: {
-        font-size: '2.875rem',
+        fontSize: '2.875rem',
       },
     },
     h2: {
       fontFamily: 'Proxima Nova Alt',
-      font-weight: 600,
-      font-size: '1.375rem',
-      line-height: 1.1,
-      letter-spacing: 0,
+      fontWeight: 600,
+      fontSize: '1.375rem',
+      lineHeight: 1.1,
+      letterSpacing: 0,
       [breakpoints.up('md')]: {
-        font-size: '2.25rem',
+        fontSize: '2.25rem',
       },
     },
   },
