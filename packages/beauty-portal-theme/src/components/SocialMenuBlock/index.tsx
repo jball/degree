@@ -8,11 +8,9 @@ import { blockTypeDefaultSerializers } from '../../helpers/sanity';
 import quote from '../../images/icons/quote-left.svg';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import useStyles from './styles';
+import './styles.scss';
 
-const SocialMediaBlock: FunctionComponent<> = ({
-
-}) => {
+const SocialMediaBlock: FunctionComponent<> = ({}) => {
   const data = useStaticQuery(graphql`
     query socialMenu {
       brandInfo: sanityBrandInfo {
@@ -24,15 +22,14 @@ const SocialMediaBlock: FunctionComponent<> = ({
       }
     }
   `);
-  const classes = useStyles({ icon: quote });
-  
+  //   const classes = useStyles({ icon: quote });
+
   return (
-      <div className={classNames('container', 'pad0')}>
-          <div>
-            <SocialMenu links={data.brandInfo} />
-          </div>
+    <div className={classNames('container', 'pad0')}>
+      <div>
+        <SocialMenu links={data.brandInfo} />
       </div>
-    </section>
+    </div>
   );
 };
 
