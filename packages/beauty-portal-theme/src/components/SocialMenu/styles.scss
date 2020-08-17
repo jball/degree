@@ -19,10 +19,12 @@
   }
 
   svg {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     fill: '#999';
     transition: all 0.3s;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
   }
 
   a:hover svg {

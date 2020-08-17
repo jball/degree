@@ -1,16 +1,11 @@
 import React, { FunctionComponent } from 'react';
 import classNames from 'classnames';
-// import { SanityTextBlockInterface } from './models';
-import { Link } from 'gatsby';
 import SocialMenu from '../SocialMenu';
-import BlockContent from '@sanity/block-content-to-react';
-import { blockTypeDefaultSerializers } from '../../helpers/sanity';
-import quote from '../../images/icons/quote-left.svg';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import './styles.scss';
 
-const SocialMediaBlock: FunctionComponent<> = ({}) => {
+const SocialMediaBlock: FunctionComponent<SocialMenuBlockInterface> = ({}) => {
   const data = useStaticQuery(graphql`
     query socialMenu {
       brandInfo: sanityBrandInfo {
@@ -22,15 +17,25 @@ const SocialMediaBlock: FunctionComponent<> = ({}) => {
       }
     }
   `);
-  //   const classes = useStyles({ icon: quote });
 
   return (
-    <div className={classNames('container', 'pad0')}>
-      <div>
-        <SocialMenu links={data.brandInfo} />
+    <section>
+      <div className={classNames('container', 'pad0')}>
+        <div style={{ float: 'right' }}>
+          <p style={{ float: 'left', marginRight: '15px' }}>
+            Connect with Rexona on:
+          </p>
+          <div style={{ float: 'right' }}>
+            <SocialMenu links={data.brandInfo} />
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
+
+interface SocialMenuBlockInterface {
+  links: any;
+}
 
 export default SocialMediaBlock;
