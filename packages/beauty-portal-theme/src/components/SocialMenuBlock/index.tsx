@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import './styles.scss';
 
-const SocialMediaBlock: FunctionComponent<SocialMenuBlockInterface> = ({}) => {
+const SocialMenuBlock: FunctionComponent<SocialMenuBlockInterface> = ({}) => {
   const data = useStaticQuery(graphql`
     query socialMenu {
       brandInfo: sanityBrandInfo {
@@ -17,7 +17,6 @@ const SocialMediaBlock: FunctionComponent<SocialMenuBlockInterface> = ({}) => {
       }
     }
   `);
-  console.log(data.brandInfo);
 
   return (
     <section className="social-menu-section">
@@ -37,4 +36,4 @@ interface SocialMenuBlockInterface {
   links: any;
 }
 
-export default SocialMediaBlock;
+export default SocialMenuBlock;

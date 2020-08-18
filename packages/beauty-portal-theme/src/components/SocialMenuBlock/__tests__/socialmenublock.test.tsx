@@ -1,10 +1,20 @@
-// import React from 'react';
-// import { render, fireEvent, waitForElement } from "@testing-library/react";
-// import SocialMenuBlock from '../SocialMenuBlock';
+import React from 'react';
+import renderer from 'react-test-renderer';
+import SocialMenuBlock from '../index';
 
-// describe("<SocialMenuBlock />", () => {
-//   test('should render correctly'', () => {
-//     const tree = render.create(<SocialMenuBlock />).toJSON();
-//     expect(tree).toMatchSnapshot();
-//   });
-// });
+describe('<SocialMenuBlock />', () => {
+  const socialMenuObject = {
+    facebookurl: 'https://www.facebook.com/AllThingsHairPH/',
+    instaurl: 'https://www.instagram.com/allthingshairuk/',
+    pinteresturl: 'https://www.pinterest.com/AllThingsHair/',
+    twitterurl: 'https://twitter.com/AllThingsHairuk',
+    youtubeurl: 'https://www.youtube.com/user/allthingshairPH',
+  };
+
+  test('should render correctly', () => {
+    const tree = renderer
+      .create(<SocialMenuBlock links={socialMenuObject} />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
