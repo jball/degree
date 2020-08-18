@@ -19,13 +19,11 @@ const SocialMediaBlock: FunctionComponent<SocialMenuBlockInterface> = ({}) => {
   `);
 
   return (
-    <section style={{ height: '56px' }}>
-      <div className={classNames('bp-container', 'p0')}>
-        <div style={{ float: 'right' }}>
-          <p style={{ float: 'left', marginRight: '15px' }}>
-            Connect with Rexona on:
-          </p>
-          <div style={{ float: 'right' }}>
+    <section className="social-menu-section">
+      <div className={classNames('bp-container', 'social-menu-p0')}>
+        <div className="social-menu-container">
+          <p className="social-menu-text">Connect with Rexona on:</p>
+          <div className="social-menu-icons">
             <SocialMenu links={data.brandInfo} />
           </div>
         </div>
