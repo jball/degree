@@ -17,6 +17,7 @@ const SocialMediaBlock: FunctionComponent<SocialMenuBlockInterface> = ({}) => {
       }
     }
   `);
+  console.log(data.brandInfo);
 
   return (
     <section className="social-menu-section">
